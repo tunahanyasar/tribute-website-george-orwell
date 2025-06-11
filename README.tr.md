@@ -10,6 +10,12 @@
 
 ---
 
+## 🌐 Canlı Demo
+
+Canlı siteyi ziyaret edin: [Tribute Website | George Orwell](https://tribute-website-george-orwell.vercel.app)
+
+---
+
 ## :computer: Kullanım
 
 1. Projeyi klonlayın
