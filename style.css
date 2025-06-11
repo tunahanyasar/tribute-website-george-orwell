@@ -1,0 +1,210 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #1e1e1e;
+  color: #ddd;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+/* ================================================== */
+
+/* HEADER START */
+header {
+  background: #333;
+  padding: 20px;
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.5s;
+}
+nav a:hover {
+  color: #927174;
+  font-weight: bold;
+}
+/* HEADER END */
+
+/* ================================================== */
+
+/* HERO START */
+.hero {
+  position: relative;
+  text-align: left;
+  overflow: hidden;
+  height: 70px; /* Başlangıçta düşük yükseklik */
+  transition: height 0.5s ease; /* Yükseklik geçiş animasyonu */
+}
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 37%;
+  filter: grayscale(50%);
+}
+.hero blockquote {
+  font-size: 2em;
+  font-weight: bold;
+  font-family: "Dancing Script", serif;
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  transform: translateY(-50%);
+  color: #5a5151;
+  padding: 10px 20px;
+  transition: top 0.5s ease, traansform 0.5s ease;
+}
+.hero:hover {
+  height: 500px; /* Fotoğrafın üzerine gelindiğinde hero bölümünün yüksekliğini artırır */
+  /* Normal halinde sadece gözleri ve quote gözükürken hover ile tüm resim gözükür */
+}
+.hero:hover blockquote {
+  top: 50%; /* Blockquote öğesini hover ile tekrar hizalamak, ortalamak için */
+}
+/* HERO END */
+
+/* ================================================== */
+
+/* BIO START */
+.bio,
+.books {
+  padding: 20px;
+}
+.bio {
+  background-color: #434e57;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.bio div {
+  width: 50%;
+  align-items: center;
+  line-height: 1.8;
+  text-align: justify;
+}
+.bio div h2 {
+  text-align: left;
+  border-left: 5px solid #927174;
+  padding-left: 10px;
+  text-shadow: 2px 2px black;
+  transition: 0.8s ease;
+}
+/* Bio içerisindeki başlıkların soluna left border eklendi ve üzerine gelindiğinde etkileşime girmesi sağlandı. */
+.bio div h2:hover {
+  border-left: #927174 solid 100px;
+  padding-right: 10px;
+}
+.bio div p {
+  text-indent: 50px;
+}
+/* BIO END */
+
+/* ================================================== */
+
+/* BOOKS START */
+.books {
+  background-color: #927174;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: left;
+  padding-right: 25%;
+  height: 500px;
+  transition: 0.8s;
+}
+.books h2 {
+  text-align: right;
+  border-right: #434e57 solid 5px;
+  padding-right: 10px;
+  transition: 0.8s ease;
+  text-shadow: 2px 2px black;
+}
+/* Books içerisindeki başlıkların soluna left border eklendi ve üzerine gelindiğinde etkileşime girmesi sağlandı. */
+.books h2:hover {
+  border-right: #434e57 solid 100px;
+  padding-right: 10px;
+}
+.books ul {
+  text-align: right;
+  list-style-type: none;
+  list-style-position: inside;
+  padding: 0;
+  position: relative;
+}
+.books li {
+  font-size: 1.2em;
+  margin: 5px 0;
+  line-height: 1.8;
+  position: relative;
+  color: #DDDDDD;
+}
+.icon{
+  cursor:pointer;
+  color:rgb(139, 56, 56);
+  padding-left: 20px;
+}
+
+/* Her bir li elemanının üzerine gelindiğinde o kitabın görselini ekrana getiren yapı */
+.books li:hover::before {
+  content: "";
+  position: absolute;
+  left: 400px; /* Görselin yatay konumu */
+  top: 0px; /* Görselin üst kısmını hizalamak için ayar */
+  width: 250px;
+  height: 350px;
+  background-image: url("animal-farm.jpg"); /* Görseli burada tanımlayın */
+  background-size: cover;
+  background-position: center;
+  transition: left 0.3s ease, top 0.3s ease;
+  border: 5px black solid;
+  border-radius: 10px;
+  
+}
+
+/* Liste elemanları için ayrı ayrı kitap görselleri */
+.books li:nth-child(1):hover::before {
+  background-image: url("./img/burmese-days.jpg");
+}
+.books li:nth-child(2):hover::before {
+  background-image: url("./img/A-Clergyman's-Daughter.webp");
+}
+.books li:nth-child(3):hover::before {
+  background-image: url("./img/Keep-the-Aspidistra-Flying.jpg");
+}
+.books li:nth-child(4):hover::before {
+  background-image: url("./img/The-Road-to-Wigan-Pier.jpg");
+}
+.books li:nth-child(5):hover::before {
+  background-image: url("./img/homage-to-catalonia.jpg");
+}
+.books li:nth-child(6):hover::before {
+  background-image: url("./img/coming-up.jpeg");
+}
+.books li:nth-child(7):hover::before {
+  background-image: url("./img/animal-farm.jpg");
+}
+.books li:nth-child(8):hover::before {
+  background-image: url("./img/1984.webp");
+}
+.books li:nth-child(9):hover::before {
+  background-image: url("./img/down-and-out.jpg");
+}
+/* BOOKS END */
+
+/* ================================================== */
+
+/* FOOTER */
+footer {
+  background: #222;
+  padding: 10px;
+  margin-top: 20px;
+}
