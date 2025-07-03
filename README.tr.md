@@ -1,4 +1,4 @@
-# 📚 Tribute Website | George Orwell
+# :closed_book: Tribute Website | George Orwell
 
 [🇬🇧 İngilizce README.md için tıklayın](./README.md)
 
