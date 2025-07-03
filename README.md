@@ -118,8 +118,12 @@ cd tribute-website-george-orwell
 
 ## 📸 Page Output
 
-![Tribute Page1](./img-page/webpage.png)
-![Tribute Page2](./img-page/webpage-2.png)
+### Before
+![Tribute Sayfası](./img-page/webpage.png)
+
+### After
+![Tribute Sayfası2](./img-page/webpage-2.png)
+
 
 ---
 

@@ -84,6 +84,17 @@ cd tribute-website-george-orwell
    ![Books](./img-page/books-hover.png)
    *Görsel 2: Hover Durumu*
 
+### 6. Sayfa Yapısı Detayları
+- **index.html**: Ana sayfa, tek sayfalık bir web sitesi olarak tasarlanmıştır
+  1. **Header** bölümünde, ana sayfa, bilgi ve kitap bölümlerine dahili gezinme için **nav** bulunur
+  2. İçerik 3 **Bölüme** ayrılmıştır:
+     1. Birinci **Bölüm**: Yazarın görsel içeriği ve alıntı tanıtımı
+     2. İkinci **Bölüm**: Yazarın biyografisi
+     3. Üçüncü **Bölüm**: Yazarın eserleri
+  3. **Footer**
+- **style.css**: index.html için tüm CSS özelliklerini içerir
+- **img**: Yazar ve kitap kapak görsellerini içeren dizin
+
 ---
 
 ## 💡 Kullanılan Teknolojiler
@@ -107,7 +118,11 @@ cd tribute-website-george-orwell
 
 ## 📸 Sayfa Çıktısı
 
-![Tribute Sayfası](./img-page/tribute-page.png)
+### Önce
+![Tribute Sayfası](./img-page/webpage.png)
+
+### Sonra
+![Tribute Sayfası2](./img-page/webpage-2.png)
 
 ---
 
